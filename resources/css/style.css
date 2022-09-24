@@ -1,7 +1,8 @@
 :root {
     --font-color: #1d1d1f;
     --light-gray: #c2c2c2;
-    --second-font-color: #959595
+    --second-font-color: #959595;
+    --project-gray: #e7e7e7;
 }
 
 abbr, blockquote, body, button, dd, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, hgroup, input, legend, li, ol, p, pre, ul {
@@ -12,35 +13,116 @@ abbr, blockquote, body, button, dd, dl, dt, fieldset, figure, form, h1, h2, h3, 
 body {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 17px;
+    line-height: 1.2;
     color: var(--font-color);
     background-color: white;
 }
 
 nav {
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255, 255, 255, 0.85);
+    position: sticky;
+    top: 0;
     box-sizing: border-box;
-    width: 100%;
     height: 55px;
     padding: 15px;
     border-bottom: 1px solid var(--light-gray);
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 46px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+p {
+    color: var(--second-font-color);
+    font-size: 17px;
 }
 
 .parts-list {
     color: var(--second-font-color);
+    max-width: 1090px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 200px;
+    flex: 0 1 1090px;
 }
 
 .parts-item {
     line-height: 21px;
 }
 
-.part-link {
-    color: inherit;
-    text-decoration: none;
-}
-
 .active {
     color: var(--font-color);
+}
+
+.part {
+    text-align: center;
+}
+
+.spacer {
+    width: 100%;
+    height: 60px;
+}
+
+.projects {
+    margin: 0 135px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 65px;
+    column-gap: 135px;
+}
+
+.project {
+    background-color: var(--project-gray);
+    width: 300px;
+    height: 400px;
+    border-radius: 40px;
+}
+
+.project-logo {
+    margin: 31px 0 14px 0;
+    max-width: 225px;
+    border: 1px solid var(--light-gray);
+    border-radius: 15px;
+}
+
+.project p {
+    width: 261px;
+    margin: 0 auto 29px;
+    max-height: 63px;
+}
+
+.stack {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stack-icon {
+    max-height: 50px;
+}
+
+#etch p {
+    margin-bottom: 10px;
+}
+#recipes h3 {
+    margin-bottom: 25px;
+}
+#recipes p {
+    margin-bottom: 40px;
 }
