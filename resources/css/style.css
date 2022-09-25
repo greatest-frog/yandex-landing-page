@@ -3,8 +3,10 @@
     --light-gray: #c2c2c2;
     --second-font-color: #959595;
     --project-gray: #e7e7e7;
+    --way-gray: #f0f0f0;
     --gray: #1d1d1d;
     --whitish: #f5f5f5;
+    --dark-blue: #096ea0;
 }
 
 abbr, blockquote, body, button, dd, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, hgroup, input, legend, li, ol, p, pre, ul {
@@ -98,9 +100,10 @@ footer {
 
 .about_text {
     background-image: url('../images/about_logo.png');
-    background-size: 1920px 400px;
+    background-size: max(100vw, 1830px) 400px;
     background-repeat: no-repeat;
     text-align: start;
+    box-sizing: border-box;
     width: 100%;
     max-height: 20vw;
     padding: 110px 130px;
@@ -109,6 +112,27 @@ footer {
 .about_text p {
     color: var(--font-color);
     font-size: 28px;
+}
+
+.way {
+    margin: 0 305px;
+}
+
+.way_part {
+    margin-top: -5px;
+}
+
+.way_window {
+    background-color: var(--way-gray);
+    width: 363px;
+    padding: 25px;
+    border: 2px solid var(--dark-blue);
+    border-radius: 30px;
+    text-align: left;
+}
+
+.right {
+    margin-left: auto;
 }
 
 .projects {
@@ -151,6 +175,14 @@ footer {
 
 .text {
     color: var(--whitish);
+}
+
+#my_way, #projects {
+    background-image: url(../images/pattern.png);
+}
+
+#short-way {
+    margin-left: 380px;
 }
 
 #etch p {
