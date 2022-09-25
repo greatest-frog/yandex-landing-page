@@ -42,6 +42,7 @@ a {
 h1 {
     font-size: 56px;
     font-weight: 700;
+    margin-bottom: 27px;
 }
 
 h2 {
@@ -97,12 +98,12 @@ footer {
 
 .about_text {
     background-image: url('../images/about_logo.png');
-    background-size: 100vw;
+    background-size: 1920px 400px;
     background-repeat: no-repeat;
     text-align: start;
     width: 100%;
     max-height: 20vw;
-    padding: 150px 130px;
+    padding: 110px 130px;
 }
 
 .about_text p {
