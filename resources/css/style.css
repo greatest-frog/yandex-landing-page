@@ -3,6 +3,8 @@
     --light-gray: #c2c2c2;
     --second-font-color: #959595;
     --project-gray: #e7e7e7;
+    --gray: #1d1d1d;
+    --whitish: #f5f5f5;
 }
 
 abbr, blockquote, body, button, dd, dl, dt, fieldset, figure, form, h1, h2, h3, h4, h5, h6, hgroup, input, legend, li, ol, p, pre, ul {
@@ -51,6 +53,14 @@ h3 {
 p {
     color: var(--second-font-color);
     font-size: 17px;
+}
+
+footer {
+    background-color: var(--font-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .parts-list {
@@ -117,6 +127,10 @@ p {
     max-height: 50px;
 }
 
+.text {
+    color: var(--whitish);
+}
+
 #etch p {
     margin-bottom: 10px;
 }
@@ -125,4 +139,18 @@ p {
 }
 #recipes p {
     margin-bottom: 40px;
+}
+
+#contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#github-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
